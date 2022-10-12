@@ -1,1 +1,8 @@
+ /*textos da pagina index*/
+div.percentage {
+    line-height: 300%;
+    font-family: 'Phetsarath';
+    font-style: normal;
 
+    color: #000000;
+}
