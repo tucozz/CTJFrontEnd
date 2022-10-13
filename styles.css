@@ -6,3 +6,99 @@ div.percentage {
 
     color: #000000;
 }
+
+body{
+    font-family:'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: center;
+    gap: 20px;
+    background-color: #7FE9BC;
+    padding: 10px 20px;
+    height: 80px;
+}
+
+.header > .header-item{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 60%;
+}
+
+.lista{
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px 50px 10px;
+}
+
+.lista > ul{
+    max-width: 65%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.imagem{
+    width: 80%;
+    max-width: 500px;
+}
+
+.button{
+    width: 250px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: #43DB7F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button > .sign-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 80%;
+    font-size: 20px;
+    background-color: #43DB7F;
+    display: flex;
+    align-items: flex-end;
+    border: none;
+    margin: 0 auto;
+
+}
+
+.icon{
+    height: 40px;
+}
+
+.opcoes{
+    justify-content: space-around;
+    gap: 0;
+}
+
+.opcao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
