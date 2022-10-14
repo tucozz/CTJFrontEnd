@@ -1,24 +1,33 @@
- /*textos da pagina index*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 div.percentage {
     line-height: 300%;
-    font-family: 'Phetsarath';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
 
     color: #000000;
 }
 
-body{
-    font-family:'Courier New', Courier, monospace;
+body {
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
+
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.header{
+.header {
     display: flex;
     width: 100%;
     align-items: center;
@@ -30,26 +39,27 @@ body{
     height: 80px;
 }
 
-.header > .header-item{
+.header>.header-item {
     display: flex;
     justify-content: space-around;
     gap: 20px;
+
 }
 
-.titulo{
+.titulo {
     display: flex;
     justify-content: center;
     text-align: center;
     max-width: 60%;
 }
 
-.lista{
+.lista {
     display: flex;
     justify-content: center;
     margin: 10px 10px 50px 10px;
 }
 
-.lista > ul{
+.lista>ul {
     max-width: 65%;
     height: 120px;
     display: flex;
@@ -58,12 +68,12 @@ body{
 
 }
 
-.imagem{
+.imagem {
     width: 80%;
     max-width: 500px;
 }
 
-.button{
+.button {
     width: 250px;
     height: 80px;
     border-radius: 80px;
@@ -71,13 +81,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
-.button > .sign-up{
+.button>.sign-up {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80%;
+    height: 40%;
     width: 80%;
     font-size: 20px;
     background-color: #43DB7F;
@@ -88,17 +99,133 @@ body{
 
 }
 
-.icon{
+.icon {
     height: 40px;
 }
 
-.opcoes{
+.opcoes {
     justify-content: space-around;
     gap: 0;
 }
 
-.opcao{
+.opcao {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-decoration: none;
+
+}
+
+/*box do calendario*/
+.header-calendario {
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.header-calendario>.wrapper {
+    width: 40%;
+    background: rgba(127, 233, 188, 0.36);
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    justify-content: center;
+}
+
+.wrapper header {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-betweence;
+}
+
+.icones {
+    display: flex;
+}
+
+.icones span {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: rgb(26, 24, 24);
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+}
+
+.icones span:last-child {
+    margin-right: -10px;
+}
+
+.icones span:hover {
+    background: #f0faf6;
+}
+
+.data-atual {
+    font-size: 200%;
+    font-weight: 500;
+}
+
+.calendario {
+    padding: 20px;
+}
+
+.calendario ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+
+.calendario .days {
+    margin-bottom: 20px;
+}
+
+.calendario li {
+    color: rgb(31, 30, 30);
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+}
+
+.calendario .semanas li {
+    font-weight: 500;
+    cursor: default;
+}
+
+.calendario .dias li {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+}
+
+.dias li.inactive {
+    color: #aaa;
+}
+
+.dias li.active {
+    color: #fff;
+}
+
+.dias li::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dias li.active::before {
+    background: #43DB7F;
+}
+
+.dias li:not(.active):hover::before {
+    background: #f2f2f2;
 }
