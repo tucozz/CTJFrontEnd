@@ -119,13 +119,13 @@ body {
 /*box do calendario*/
 .header-calendario {
     align-items: center;
-    padding: 30px;
+    padding: 10px;
     justify-content: center;
     min-height: 100vh;
 }
 
 .header-calendario>.wrapper {
-    width: 45%;
+    width: 30%;
     background: rgba(127, 233, 188, 0.36);
     border-radius: 10px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
