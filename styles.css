@@ -119,7 +119,7 @@ body {
 /*box do calendario*/
 .header-calendario {
     align-items: center;
-    padding: 10px;
+    padding: 30px;
     justify-content: center;
     min-height: 100vh;
 }
