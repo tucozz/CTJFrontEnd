@@ -16,6 +16,10 @@ div.percentage {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
 
@@ -29,6 +33,7 @@ section {
 }
 
 .main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,7 +93,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    border: 10 10;
 }
 
 .button>.sign-up {
@@ -274,7 +279,7 @@ h2 {
 .criar-todo input[type="text"] {
     display: block;
     height: 50px;
-    width: 50%;
+    width: 100%;
     font-size: 1.125rem;
     padding: 1rem 1.5 rem;
     background-color: rgb(221, 217, 217);
@@ -377,8 +382,72 @@ input:checked ~ .bubble::after{
     opacity: 0.75;
 }
 
-/*lista de tarefas*/
-.todo_list .list{
-    margin: 1rem 0;
-
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+/*lista de tarefas*/
+.todo-list .list{
+    margin: 1rem 0;
+}
+
+.todo-list .todo-item{
+    display: flex;
+    align-items: center;
+    background-color: #7FE9BC;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 1rem;
+}
+
+.todo-item label{
+    display: block;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.todo-item .conteudo-todo{
+    flex: 1 1 0%;
+}
+
+.todo-item .conteudo-todo input{
+    color: #fff;
+    font-size: 1.125rem;
+}
+
+.todo-item .acoes{
+    display: flex;
+    align-items: center;
+}
+
+.todo-item .acoes button:hover{
+    opacity: 0.75;
+}
+
+.todo-item .acoes button{
+    display: block;
+    padding: 0.5rem;
+    border-radius: 0.25;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.todo-item .acoes .edit{
+    margin-right: 0.5rem;
+    background-color: #26b1bb;
+}
+
+.todo-item .acoes .delete{
+    background-color: #ee2d57;
+}
+
+.todo-item.done .todo-content input{
+    text-decoration: line-through;
+    color: rgb(167, 167, 167);
+}
+
