@@ -141,7 +141,7 @@ body {
 
 .icones {
     display: flex;
-    margin-left: 10px;
+    padding-right: 30px;
 }
 
 .icones span {
@@ -168,6 +168,7 @@ body {
 .data-atual {
     font-size: 150%;
     font-weight: 500;
+    padding-right: 1.5rem;
 }
 
 .calendario {
