@@ -21,6 +21,13 @@ body {
 
 }
 
+section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -168,7 +175,6 @@ body {
 .data-atual {
     font-size: 150%;
     font-weight: 500;
-    padding-right: 1.5rem;
 }
 
 .calendario {
@@ -240,17 +246,139 @@ body {
     --light: #EEE;
     --atencao: rgb(218, 36, 36);
     --sombra: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --traballho-glow: 0px 0px 4px rgb(80, 139, 207);
+    --escola-glow: 0px 0px 4px rgb(235, 213, 92);
+    --pessoal-glow: 0px 0px 4px rgb(192, 58, 185);
 }
-input:not([type="radio"]):not([type="checkbox"]),button{
-appearance: none;
-border: none;
-outline: none;
-background:none;
-cursor: initial;
+
+input:not([type="radio"]):not([type="checkbox"]),
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: initial;
 }
-h3{
+
+h3 {
+    font-size: 1 rem;
+    font-weight: 400;
     margin-bottom: 0.5rem;
 }
-h3{
+
+h2 {
+    font-weight: 700;
     margin-bottom: 0.5rem;
+}
+
+.criar-todo input[type="text"] {
+    display: block;
+    height: 50px;
+    width: 50%;
+    font-size: 1.125rem;
+    padding: 1rem 1.5 rem;
+    background-color: rgb(221, 217, 217);
+    border-radius: 00.5rem;
+    box-shadow: var(--sombra);
+    margin-bottom: 1.5rem;
+}
+
+.criar-todo .categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.criar-todo .categorias label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--sombra);
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.bubble.trabalho {
+    border: 2px solid var(--trabalho);
+    border-color: var(--trabalho);
+    box-shadow: var(--trabalho-glow);
+}
+.bubble.pessoal {
+    border: 2px solid var(--pessoal);
+    border-color: var(--pessoal);
+    box-shadow: var(--pessoal-glow);
+}
+
+.bubble.escola {
+    border: 2px solid var(--escola);
+    border-color: var(--escola);
+    box-shadow: var(--escola-glow);
+}
+
+.bubble::after {
+    content: "";
+    display: block;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    background-color: var(--trabalho);
+    box-shadow: var(--traballho-glow);
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+.bubble.pessoal::after{
+    background-color: var(--pessoal);
+    box-shadow: var(--pessoal-glow);
+}
+.bubble.escola::after{
+    background-color: var(--escola);
+    box-shadow: var(--escola-glow);
+}
+input:checked ~ .bubble::after{
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+.criar-todo .categorias label div{
+    color: #030303 ;
+    font-size: 1.125rem;
+    margin-top: 1.5 rem;
+}
+.criar-todo input[type="submit"]{
+    display: block;
+    width: 200px;
+    height: 70px;
+    font-size: 1 rem;
+    font-weight: 400;
+    border-radius: 80px;
+    background-color: #43DB7F;
+    transition: 0.2s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+.criar-todo input[type="submit"]:hover{
+    opacity: 0.75;
+}
+
+/*lista de tarefas*/
+.todo_list .list{
+    margin: 1rem 0;
+
 }
