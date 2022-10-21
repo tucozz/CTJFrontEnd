@@ -53,7 +53,9 @@ iconesMovimento.forEach(icon => { // administra os icones de movimentação dos 
 });
 
 //lista de tarefas
-newTodoForm.addEventListener('submit', e => {
+window.addEventListener('load', () => {
+	todos = JSON.parse(localStorage.getItem('todos')) || [];
+	newTodoForm.addEventListener('submit', e => {
 		e.preventDefault();
 
 		const todo = {
