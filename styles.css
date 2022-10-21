@@ -397,10 +397,10 @@ form{
 .todo-list .todo-item{
     display: flex;
     align-items: center;
-    background-color: #7FE9BC;
+    background-color: #cbebde;
     padding: 1rem;
     border-radius: 0.5rem;
-    box-shadow: var(--shadow);
+    box-shadow: var(--sombra);
     margin-bottom: 1rem;
 }
 
@@ -411,7 +411,7 @@ form{
 }
 
 .todo-item .conteudo-todo{
-    flex: 1 1 0%;
+    flex: 1 0 0%;
 }
 
 .todo-item .conteudo-todo input{
