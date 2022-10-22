@@ -410,11 +410,11 @@ form{
     cursor: pointer;
 }
 
-.todo-item .conteudo-todo{
+.todo-item .content-todo{
     flex: 1 0 0%;
 }
 
-.todo-item .conteudo-todo input{
+.todo-item .content-todo input{
     color: #fff;
     font-size: 1.125rem;
 }
