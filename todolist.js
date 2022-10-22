@@ -55,12 +55,12 @@ function DisplayTodos () {
 			span.classList.add('trabalho');
 		}
 
-		content.classList.add('conteudo-todo');
+		content.classList.add('content-todo');
 		actions.classList.add('actions');
 		edit.classList.add('edit');
 		deleteButton.classList.add('delete');
 
-		content.innerHTML = `<input type="text" value="${conteudo.todo}" readonly>`;
+		content.innerHTML = `<input type="text" value="${content.todo}" readonly>`;
 		edit.innerHTML = 'Edit';
 		deleteButton.innerHTML = 'Delete';
 
@@ -98,7 +98,7 @@ function DisplayTodos () {
 			input.focus();
 			input.addEventListener('blur', (e) => {
 				input.setAttribute('readonly', true);
-				conteudo.todo = e.target.value;
+				content.todo = e.target.value;
 				localStorage.setItem('todos', JSON.stringify(todos));
 				DisplayTodos()
 
