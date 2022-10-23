@@ -118,6 +118,7 @@ section {
 .opcoes {
     justify-content: space-around;
     gap: 0;
+     text-decoration: none;
 }
 
 .opcao {
@@ -246,14 +247,17 @@ section {
 /*todo-list*/
 :root {
     --trabalho: rgb(80, 139, 207);
-    --escola: rgb(235, 213, 92);
+    --escola: rgb(237, 213, 32);
     --pessoal: rgb(192, 58, 185);
     --light: #EEE;
-    --atencao: rgb(218, 36, 36);
+    --grey: #888;
+	--dark: #313154;
+	--danger: #ff5b57;
     --sombra: 0 1px 3px rgba(0, 0, 0, 0.1);
     --traballho-glow: 0px 0px 4px rgb(80, 139, 207);
-    --escola-glow: 0px 0px 4px rgb(235, 213, 92);
+    --escola-glow: 0px 0px 4px rgb(237, 213, 32);
     --pessoal-glow: 0px 0px 4px rgb(192, 58, 185);
+    --trabalho-glow: 0px 0px 4px rgb(80, 139, 207);
 }
 
 input:not([type="radio"]):not([type="checkbox"]),
@@ -263,6 +267,7 @@ button {
     outline: none;
     background: none;
     cursor: initial;
+
 }
 
 h3 {
@@ -282,12 +287,27 @@ h2 {
     width: 100%;
     font-size: 1.125rem;
     padding: 1rem 1.5 rem;
+    color: var(--dark);
     background-color: rgb(221, 217, 217);
     border-radius: 00.5rem;
     box-shadow: var(--sombra);
     margin-bottom: 1.5rem;
 }
-
+.criar-todo textarea[type="text"] {   
+    display: block;
+    height: 200px;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 1rem 1.5 rem;
+    color: var(--dark);
+    background-color: rgb(221, 217, 217);
+    border-radius: 00.5rem;
+    box-shadow: var(--sombra);
+    margin-bottom: 1.5rem;
+    border: 0 none;
+    outline: 0;
+    resize: none;
+}
 .criar-todo .categorias {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -300,6 +320,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #FFF;
     padding: 1.5rem;
     border-radius: 0.5rem;
     box-shadow: var(--sombra);
@@ -338,7 +359,7 @@ input[type="checkbox"] {
 }
 
 .bubble::after {
-    content: "";
+    content: '';
     display: block;
     opacity: 0;
     width: 0px;
@@ -362,7 +383,7 @@ input:checked ~ .bubble::after{
     opacity: 1;
 }
 .criar-todo .categorias label div{
-    color: #030303 ;
+    color: var(--dark);
     font-size: 1.125rem;
     margin-top: 1.5 rem;
 }
@@ -370,13 +391,14 @@ input:checked ~ .bubble::after{
     display: block;
     width: 200px;
     height: 70px;
-    font-size: 1 rem;
+    font-size: 20px;
     font-weight: 400;
     border-radius: 80px;
     background-color: #43DB7F;
     transition: 0.2s ease-in-out;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .criar-todo input[type="submit"]:hover{
     opacity: 0.75;
@@ -397,7 +419,7 @@ form{
 .todo-list .todo-item{
     display: flex;
     align-items: center;
-    background-color: #cbebde;
+    background-color: rgba(127, 233, 188, 0.36);
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: var(--sombra);
@@ -415,39 +437,40 @@ form{
 }
 
 .todo-item .content-todo input{
-    color: #fff;
+    color: var(--dark);
     font-size: 1.125rem;
 }
 
-.todo-item .acoes{
+
+.todo-item .actions{
     display: flex;
     align-items: center;
 }
 
-.todo-item .acoes button:hover{
+.todo-item .actions button:hover{
     opacity: 0.75;
 }
 
-.todo-item .acoes button{
+.todo-item .actions button{
     display: block;
-    padding: 0.5rem;
-    border-radius: 0.25;
-    color: white;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    color: --dark;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
 
-.todo-item .acoes .edit{
+.todo-item .actions .edit{
     margin-right: 0.5rem;
-    background-color: #26b1bb;
+    background-color: #43DB7F;
 }
 
-.todo-item .acoes .delete{
+.todo-item .actions .delete{
     background-color: #ee2d57;
 }
 
 .todo-item.done .todo-content input{
     text-decoration: line-through;
-    color: rgb(167, 167, 167);
+    color: var(--grey);
 }
 

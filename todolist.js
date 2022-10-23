@@ -8,7 +8,6 @@ window.addEventListener('load', () => {
 		const todo = {
 			content: e.target.elements.content.value,
 			category: e.target.elements.category.value,
-			description: e.target.elements.description.value,
 			done: false,
 			createdAt: new Date().getTime()
 		}
@@ -29,7 +28,7 @@ window.addEventListener('load', () => {
 
 function DisplayTodos () {
 	const todoList = document.querySelector('#todo-list');
-	todoList.innerHTML = '';
+	todoList.innerHTML = "";
 
 	todos.forEach(todo => {
 		const todoItem = document.createElement('div');
@@ -60,7 +59,7 @@ function DisplayTodos () {
 		edit.classList.add('edit');
 		deleteButton.classList.add('delete');
 
-		content.innerHTML = `<input type="text" value="${content.todo}" readonly>`;
+		content.innerHTML = `<input type="text" value="${todo.content}" readonly>`;
 		edit.innerHTML = 'Editar';
 		deleteButton.innerHTML = 'Deletar';
 
@@ -98,7 +97,7 @@ function DisplayTodos () {
 			input.focus();
 			input.addEventListener('blur', (e) => {
 				input.setAttribute('readonly', true);
-				content.todo = e.target.value;
+				todo.content = e.target.value;
 				localStorage.setItem('todos', JSON.stringify(todos));
 				DisplayTodos()
 

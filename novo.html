@@ -33,6 +33,13 @@
             <h2>O que você deseja agendar?</h2>
             <form id="new-todo-form">
                 <input type="text" name="content" id="content" placeholder="ex. Fazer compras" />
+                <h3>Data</h3>
+                <div type="text" class="modal fade" id="form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">                  
+                          <input type="date" class="form-control" name="" id="dateInput">
+                </div> 
+                <h3>Descrição</h3>
+                <textarea type="text" name="" class="form-control" id="textarea" cols="30" rows="5" placeholder="ex. 2 pacotes de macarão..."></textarea>        
+                
                 <h3>Escolha uma categoria</h3>
                 <div class="categorias">
                     <label>
@@ -40,7 +47,6 @@
                         <span class="bubble trabalho"></span>
                         <div>Trabalho</div>
                     </label>
-
                     <label>
                         <input type="radio" name="category" id="category2" value="pessoal" />
                         <span class="bubble pessoal"></span>
@@ -53,14 +59,8 @@
                         <div>Escola</div>
                     </label>
                 </div>
-                <h3>Descrição</h3>
-                <input type="text" name="description" id="description" placeholder="ex. 2 pacotes de macarão..." />
                 <input type="submit" value="Adicionar tarefa" />
             </form>
-        </section>
-        <section class="todo-list">
-            <h2>Lista de tarefas</h2>
-            <div class="list" id="todo-list"></div>
         </section>
     </main>
     <script src="todolist.js"></script>
