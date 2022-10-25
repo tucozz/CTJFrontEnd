@@ -469,7 +469,7 @@ form{
     background-color: #ee2d57;
 }
 
-.todo-item.done .todo-content input{
+.todo-item.done .content-todo input{
     text-decoration: line-through;
     color: var(--grey);
 }
