@@ -308,6 +308,21 @@ h2 {
     outline: 0;
     resize: none;
 }
+.criar-todo input[type="date"] {
+    display: block;
+    height: 50px;
+    width: 200px;
+    font-size: 1.125rem;
+    padding: 1.5 rem;
+    color: var(--dark);
+    background-color: rgb(221, 217, 217);
+    border-radius: 00.5rem;
+    box-shadow: var(--sombra);
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
 .criar-todo .categorias {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -474,12 +489,20 @@ form{
     color: var(--grey);
 }
 
-.todo-item .date-todo{
+.todo-item .date-todo input{
+    color: var(--dark);
     display: flex;
     align-items: center;
 }
-.todo-item .description-todo{
+.todo-item .description-todo input{
     display: flex;
     align-items: center;
+}
+
+.todo-item.done .description-todo input{
+    color: var(--grey);
+}
+.todo-item.done .date-todo input{
+    color: var(--grey);
 }
 
