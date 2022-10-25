@@ -8,6 +8,8 @@ window.addEventListener('load', () => {
 		const todo = {
 			content: e.target.elements.content.value,
 			category: e.target.elements.category.value,
+			date: e.target.elements.dateInput.value,
+			description: e.target.elements.textarea.value,
 			done: false,
 			createdAt: new Date().getTime()
 		}
@@ -22,11 +24,11 @@ window.addEventListener('load', () => {
 		DisplayTodos();
 	})
 
-	DisplayTodos();  
+	DisplayTodos();
 
 })
 
-function DisplayTodos () {
+function DisplayTodos() {
 	const todoList = document.querySelector('#todo-list');
 	todoList.innerHTML = "";
 
@@ -38,7 +40,9 @@ function DisplayTodos () {
 		const input = document.createElement('input');
 		const span = document.createElement('span');
 		const content = document.createElement('div');
+		const date = document.createElement('div');
 		const actions = document.createElement('div');
+		const description = document.createElement('div');
 		const edit = document.createElement('button');
 		const deleteButton = document.createElement('button');
 
@@ -48,18 +52,22 @@ function DisplayTodos () {
 
 		if (todo.category == 'pessoal') {
 			span.classList.add('pessoal');
-		} else if (todo.category == 'escola'){
+		} else if (todo.category == 'escola') {
 			span.classList.add('escola');
 		} else {
 			span.classList.add('trabalho');
 		}
 
 		content.classList.add('content-todo');
+		date.classList.add('date-todo');
+		description.classList.add('description-todo');
 		actions.classList.add('actions');
 		edit.classList.add('edit');
 		deleteButton.classList.add('delete');
 
 		content.innerHTML = `<input type="text" value="${todo.content}" readonly>`;
+		date.innerHTML = `< input type="text" class="modal fade" value="${todo.date}" readonly>`;
+		description.innerHTML = `<input type="text" class="form-control" value="${todo.description}" readonly>`;
 		edit.innerHTML = 'Editar';
 		deleteButton.innerHTML = 'Deletar';
 
@@ -69,6 +77,8 @@ function DisplayTodos () {
 		actions.appendChild(deleteButton);
 		todoItem.appendChild(label);
 		todoItem.appendChild(content);
+		todoItem.appendChild(date);
+		todoItem.appendChild(description);
 		todoItem.appendChild(actions);
 
 		todoList.appendChild(todoItem);
@@ -76,7 +86,7 @@ function DisplayTodos () {
 		if (todo.done) {
 			todoItem.classList.add('done');
 		}
-		
+
 		input.addEventListener('change', (e) => {
 			todo.done = e.target.checked;
 			localStorage.setItem('todos', JSON.stringify(todos));
@@ -101,7 +111,28 @@ function DisplayTodos () {
 				localStorage.setItem('todos', JSON.stringify(todos));
 				DisplayTodos()
 
+			}) 
+			const dateInput = date.querySelector("dateInput");
+			dateInput.removeAttribute('readonly');
+			dateInput.focus();
+			dateInput.addEventListener('blur', (e) => {
+				dateInput.setAttribute('readonly', true);
+				todo.date = e.target.value;
+				localStorage.setItem('todos', JSON.stringify(todos));
+				DisplayTodos()
+
 			})
+			const textarea = description.querySelector("textarea");
+			textarea.removeAttribute('readonly');
+			textarea.focus();
+			textarea.addEventListener('blur', (e) => {
+				textarea.setAttribute('readonly', true);
+				todo.description = e.target.value;
+				localStorage.setItem('todos', JSON.stringify(todos));
+				DisplayTodos()
+
+			})
+
 		})
 
 		deleteButton.addEventListener('click', (e) => {
