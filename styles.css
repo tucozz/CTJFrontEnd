@@ -474,3 +474,12 @@ form{
     color: var(--grey);
 }
 
+.todo-item .date-todo{
+    display: flex;
+    align-items: center;
+}
+.todo-item .description-todo{
+    display: flex;
+    align-items: center;
+}
+
