@@ -66,7 +66,7 @@ function DisplayTodos() {
 		deleteButton.classList.add('delete');
 
 		content.innerHTML = `<input type="text" value="${todo.content}" readonly>`;
-		date.innerHTML = `< input type="text" class="modal fade" value="${todo.date}" readonly>`;
+		date.innerHTML = `<span class="modal fade">${todo.date}</span>`;
 		description.innerHTML = `<input type="text" class="form-control" value="${todo.description}" readonly>`;
 		edit.innerHTML = 'Editar';
 		deleteButton.innerHTML = 'Deletar';
