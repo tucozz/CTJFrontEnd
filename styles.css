@@ -128,9 +128,13 @@ section {
     text-decoration: none;
 
 }
-.a{
+.button>.sign-up a{
+    text-decoration: none; 
     color: #000000;
+}
+.opcoes a{
     text-decoration: none;
+    color: #000000;
 }
 
 /*calendario*/
