@@ -43,7 +43,6 @@ function DisplayTodos() {
 		const date = document.createElement('div');
 		const actions = document.createElement('div');
 		const description = document.createElement('div');
-		const edit = document.createElement('button');
 		const deleteButton = document.createElement('button');
 
 		input.type = 'checkbox';
@@ -62,18 +61,15 @@ function DisplayTodos() {
 		date.classList.add('date-todo');
 		description.classList.add('description-todo');
 		actions.classList.add('actions');
-		edit.classList.add('edit');
 		deleteButton.classList.add('delete');
 
-		content.innerHTML = `<input type="text" value="${todo.content}" readonly>`;
-		date.innerHTML = `<input type="date" class="form-control" value="${todo.date}" readonly>`;
-		description.innerHTML = `<input type="text" class="form-control" value="${todo.description}" readonly>`;
-		edit.innerHTML = 'Editar';
+		content.innerHTML = `<input type="text" value="${todo.content}">`;
+		date.innerHTML = `<input type="date" class="form-control" value="${todo.date}">`;
+		description.innerHTML = `<input type="text" class="form-control" value="${todo.description}">`;
 		deleteButton.innerHTML = 'Deletar';
 
 		label.appendChild(input);
 		label.appendChild(span);
-		actions.appendChild(edit);
 		actions.appendChild(deleteButton);
 		todoItem.appendChild(label);
 		todoItem.appendChild(content);
@@ -101,38 +97,31 @@ function DisplayTodos() {
 
 		})
 
-		edit.addEventListener('click', (e) => {
+		content.addEventListener('click', (e) => {
 			const input = content.querySelector('input');
-			input.removeAttribute('readonly');
-			input.focus();
 			input.addEventListener('blur', (e) => {
-				input.setAttribute('readonly', true);
 				todo.content = e.target.value;
 				localStorage.setItem('todos', JSON.stringify(todos));
 				DisplayTodos()
 
-			}) 
-			const dateInput = date.querySelector("dateInput");
-			dateInput.removeAttribute('readonly');
-			dateInput.focus();
+			})
+		})
+		date.addEventListener('click', (e) => {
+			const dateInput = date.querySelector("input");
 			dateInput.addEventListener('blur', (e) => {
-				dateInput.setAttribute('readonly', true);
 				todo.date = e.target.value;
 				localStorage.setItem('todos', JSON.stringify(todos));
 				DisplayTodos()
 
 			})
-			const textarea = description.querySelector("textarea");
-			textarea.removeAttribute('readonly');
-			textarea.focus();
+		})
+		description.addEventListener('click', (e) => {
+			const textarea = description.querySelector("input");
 			textarea.addEventListener('blur', (e) => {
-				textarea.setAttribute('readonly', true);
 				todo.description = e.target.value;
 				localStorage.setItem('todos', JSON.stringify(todos));
 				DisplayTodos()
-
 			})
-
 		})
 
 		deleteButton.addEventListener('click', (e) => {
@@ -140,6 +129,5 @@ function DisplayTodos() {
 			localStorage.setItem('todos', JSON.stringify(todos));
 			DisplayTodos()
 		})
-
 	})
 }

@@ -475,11 +475,6 @@ form{
     transition: 0.2s ease-in-out;
 }
 
-.todo-item .actions .edit{
-    margin-right: 0.5rem;
-    background-color: #43DB7F;
-}
-
 .todo-item .actions .delete{
     background-color: #ee2d57;
 }
