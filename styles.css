@@ -118,7 +118,7 @@ section {
 .opcoes {
     justify-content: space-around;
     gap: 0;
-     text-decoration: none;
+   color: #000000;
 }
 
 .opcao {
@@ -127,6 +127,10 @@ section {
     align-items: center;
     text-decoration: none;
 
+}
+.a{
+    color: #000000;
+    text-decoration: none;
 }
 
 /*calendario*/
