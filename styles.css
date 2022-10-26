@@ -108,7 +108,7 @@ section {
     align-items: flex-end;
     border: none;
     margin: 0 auto;
-
+    font-weight: 400;
 }
 
 .icon {
@@ -118,7 +118,8 @@ section {
 .opcoes {
     justify-content: space-around;
     gap: 0;
-   color: #000000;
+    color: #000000;
+    font-weight: 400;
 }
 
 .opcao {
