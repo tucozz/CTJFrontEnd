@@ -63,7 +63,7 @@ function DisplayTodos() {
 		actions.classList.add('actions');
 		deleteButton.classList.add('delete');
 
-		content.innerHTML = `<input type="text" value="${todo.content}">`;
+		content.innerHTML = `<input type="text" value="${todo.content}"><br>`;
 		date.innerHTML = `<input type="date" class="form-control" value="${todo.date}">`;
 		description.innerHTML = `<input type="text" class="form-control" value="${todo.description}">`;
 		deleteButton.innerHTML = 'Deletar';

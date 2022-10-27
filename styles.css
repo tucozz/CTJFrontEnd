@@ -26,8 +26,8 @@ body {
 }
 
 section {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
@@ -163,7 +163,7 @@ section {
 
 .icones {
     display: flex;
-    padding-right: 30px;
+    padding-left: 70%;
 }
 
 .icones span {
@@ -188,6 +188,8 @@ section {
 }
 
 .data-atual {
+    padding-top: 1rem;
+    padding-left: 1rem;
     font-size: 150%;
     font-weight: 500;
 }
@@ -295,7 +297,7 @@ h2 {
     height: 50px;
     width: 100%;
     font-size: 1.125rem;
-    padding: 1rem 1.5 rem;
+    padding: 1rem;
     color: var(--dark);
     background-color: rgb(221, 217, 217);
     border-radius: 00.5rem;
@@ -307,7 +309,7 @@ h2 {
     height: 200px;
     width: 100%;
     font-size: 1.125rem;
-    padding: 1rem 1.5 rem;
+    padding: 1rem;
     color: var(--dark);
     background-color: rgb(221, 217, 217);
     border-radius: 00.5rem;
@@ -318,6 +320,7 @@ h2 {
     resize: none;
 }
 .criar-todo input[type="date"] {
+    padding-left: 1.5rem;
     display: block;
     height: 50px;
     width: 200px;
@@ -329,8 +332,6 @@ h2 {
     box-shadow: var(--sombra);
     margin-bottom: 1.5rem;
     cursor: pointer;
-    align-items: center;
-    justify-content: center;
 }
 .criar-todo .categorias {
     display: grid;
@@ -441,13 +442,10 @@ main{
     max-width: 800px;
 }
 
-.todo-list .list, .seven-days .list{
-    margin: 1rem 0;
-}
 
-.todo-list .todo-item, .seven-days .todo-item{
-    display: flex;
-    flex-wrap: wrap;
+.todo-list .todo-item{
+    width: 100%;
+    display: block;
     align-items: center;
     background-color: rgba(127, 233, 188, 0.36);
     padding: 1rem;
@@ -463,7 +461,7 @@ main{
 }
 
 .todo-item .content-todo{
-    flex: 1 0 0%;
+    flex: 100%;
 }
 
 .todo-item .content-todo input{
@@ -475,6 +473,7 @@ main{
 .todo-item .actions{
     display: flex;
     align-items: center;
+    padding-left: 70%;
 }
 
 .todo-item .actions button:hover{
@@ -500,13 +499,23 @@ main{
 }
 
 .todo-item .date-todo input{
+
+    font-size: 1 rem;
     color: var(--dark);
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    padding-top: 1rem;
 }
-.todo-item .description-todo input{
+.todo-item .description-todo input[type="text"]{
+    padding-top: 1rem;
+    font-size: 1 rem;
+    flex: 100%;
+    color: var(--dark);
+    overflow-wrap: break-word;
     display: flex;
     align-items: center;
+
 }
 
 .todo-item.done .description-todo input{
