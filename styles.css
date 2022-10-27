@@ -436,12 +436,18 @@ form{
 }
 
 /*lista de tarefas*/
-.todo-list .list{
+main{
+    width: 90%;
+    max-width: 800px;
+}
+
+.todo-list .list, .seven-days .list{
     margin: 1rem 0;
 }
 
-.todo-list .todo-item{
+.todo-list .todo-item, .seven-days .todo-item{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     background-color: rgba(127, 233, 188, 0.36);
     padding: 1rem;
@@ -493,21 +499,20 @@ form{
     color: var(--grey);
 }
 
-.todo-item .date-todo input {
-    font-size: 1rem;
-   color: var(--dark);
+.todo-item .date-todo input{
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+}
+.todo-item .description-todo input{
+    display: flex;
+    align-items: center;
 }
 
-.todo-item .description-todo input {
-   font-size: 1rem;
-   color: var(--dark);
-}
-
-.todo-item.done .description-todo input {
+.todo-item.done .description-todo input{
     color: var(--grey);
 }
-
-.todo-item.done .date-todo input {
+.todo-item.done .date-todo input{
     color: var(--grey);
 }
 
