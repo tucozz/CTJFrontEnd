@@ -50,10 +50,10 @@
 ## Sobre o projeto
 
 <div align="center">
-    <img src="imagens/tela.png" width="800" height="800">
+    <img src="imagens/tela.png" width="700" height="500">
 </div>
 
-Trata-se de um um web app de lista de afazeres requisitado pela contratante Klien Criente.
+Trata-se de um web app de lista de afazeres requisitado pela contratante Klien Criente.
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
@@ -140,10 +140,10 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Contato
+Arthur Estefanato - tutuestefanato@gmail.com
+Emilly Lopes - emillylopsneves@gmail.com
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Link do projeto: [https://github.com/tucozz/CTJFrontEnd](https://github.com/tucozz/CTJFrontEnd)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,9 +152,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Agradecimentos
 
-* []()
-* []()
-* []()
+* [Agradecemos a toda a equipe da CT Junior pela orportunidade, e em especial ao nosso mentor, Mateus Biancardi, por todo o seu suporte e apoio.]
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
