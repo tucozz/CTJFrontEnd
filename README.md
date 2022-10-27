@@ -1,5 +1,5 @@
 # CTJFrontEnd
-[![Contributors][contributors-shield]][contributors-url]
+[![Colaboradores][contributors-shield]][https://github.com/tucozz/CTJFrontEnd/graphs/contributors]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -11,11 +11,12 @@
 <h3 align="center">Check Me</h3>
 
   <p align="center">
-    Trabalho em conjunto para processo seletivo da CT Junior disponível para visualização em: https://tucozz.github.io/CTJFrontEnd/.
+    Trabalho em conjunto para processo seletivo da CT Junior disponível para visualização em: https://tucozz.github.io/CTJFrontEnd/
     <br />
     <a href="https://github.com/tucozz/CTJFrontEnd"><strong>Explore a documentação »</strong></a>
     <br />
     <br />
+    <a href="https://www.figma.com/file/xMpQgKhkHshfgWMmIWAAxT/CT-JUNIOR?node-id=0%3A1">Projeto de design</a>
   </p>
 </div>
 
@@ -27,7 +28,7 @@
     <li>
       <a href="#about-the-project">Sobre o projeto</a>
       <ul>
-        <li><a href="#built-with">Construído com</a></li>
+        <li><a href="#built-with">Feito com</a></li>
       </ul>
     </li>
     <li>
@@ -40,7 +41,7 @@
     <li><a href="#usage">Uso</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Colaboradores</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#license">Licença</a></li>
     <li><a href="#contact">Contato</a></li>
     <li><a href="#acknowledgments">Agradecimentos</a></li>
   </ol>
@@ -49,14 +50,15 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Sobre o projeto
 
-[![Product Name Screen Shot][product-screenshot]](https://tucozz.github.io/CTJFrontEnd/)
+<div align="center">
+    <img src="images/tela.png" width="1000" height="1000">
+</div>
 
 Trata-se de um um web app de lista de afazeres requisitado pela contratante Klien Criente.
 
 <p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
-
 
 
 ### Built With
@@ -70,7 +72,7 @@ Trata-se de um um web app de lista de afazeres requisitado pela contratante Klie
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
 
 
 
@@ -178,7 +180,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 * []()
 * []()
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
 
 
 
