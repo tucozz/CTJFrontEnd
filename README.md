@@ -108,6 +108,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contato
 Arthur Estefanato - tutuestefanato@gmail.com
+
 Emilly Lopes - emillylopsneves@gmail.com
 
 Link do projeto: [https://github.com/tucozz/CTJFrontEnd](https://github.com/tucozz/CTJFrontEnd)
@@ -119,7 +120,7 @@ Link do projeto: [https://github.com/tucozz/CTJFrontEnd](https://github.com/tuco
 <!-- ACKNOWLEDGMENTS -->
 ## Agradecimentos
 
-* [Agradecemos a toda a equipe da CT Junior pela orportunidade, e em especial ao nosso mentor, Mateus Biancardi, por todo o seu suporte e apoio.]
+* Agradecemos a toda a equipe da CT Junior pela orportunidade, e em especial ao nosso mentor, Mateus Biancardi, por todo o seu suporte e apoio.
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
