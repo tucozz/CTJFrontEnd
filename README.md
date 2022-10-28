@@ -25,21 +25,22 @@
   <summary>Índice</summary>
   <ol>
     <li>
-      <a href="#about-the-project">Sobre o projeto</a>
+      <a href="#Sobre-o-projeto">Sobre o projeto</a>
       <ul>
-        <li><a href="#built-with">Feito com</a></li>
+        <li><a href="#Feito com">Feito com</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Primeiros passos</a>
+      <a href="#Primeiros-passos">Primeiros passos</a>
       <ul>
-        <li><a href="#prerequisites">Pré-requisito</a></li>
+        <li><a href="#Pre-requisito">Pré-requisito</a></li>
+        <li><a href="#Instalacao">Instalação</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Uso</a></li>
-    <li><a href="#license">Licença</a></li>
-    <li><a href="#contact">Contato</a></li>
-    <li><a href="#acknowledgments">Agradecimentos</a></li>
+    <li><a href="#Uso">Uso</a></li>
+    <li><a href="#Licenca">Licença</a></li>
+    <li><a href="#Contato">Contato</a></li>
+    <li><a href="#Agradecimentos">Agradecimentos</a></li>
   </ol>
 </details>
 
@@ -55,11 +56,11 @@ Trata-se de um web app de lista de afazeres requisitado pela contratante Klien C
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 
-### Built With
+### Feito com
 
-* [HTML]
-* [CSS]
-* [Javascript]
+* HTML
+* CSS
+* Javascript
 
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
@@ -69,16 +70,23 @@ Trata-se de um web app de lista de afazeres requisitado pela contratante Klien C
 <!-- GETTING STARTED -->
 ## Primeiros passos
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
-### Pré-requisito
+### Pre requisito
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Git Propriamente instalado e inicializado.
+
+### Instalacao
+Descrito um passo a passo de como iniciar a aplicação e utilizá-la:
+
+1. Clone o repositório
+   ```sh
+   git clone https://github.com/tucozz/CTJFrontEnd
+   ```
+2. Dentro da pasta copiada, execute o arquivo 'index.html'
+   ```sh
+   ./index.html
+   ```
+
 
 ## Uso
 
@@ -89,7 +97,7 @@ Use esta aplicação para gerênciar suas tarefas de forma prática e eficiente.
 
 
 <!-- LICENSE -->
-## Lisença
+## Licenca
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
